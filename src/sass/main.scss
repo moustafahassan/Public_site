@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:200,300,400');
+@import url('https://fonts.googleapis.com/css?family=Rubik:900');
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Cormorant+Garamond');
+@import "./vendor/normalize.scss";
+
+//Typography
+// @import "./base/fontAwesome/font-awesome.scss";
+@import "./base/typography.scss";
+
+//Regions
+@import "regions/home/homeIndex.scss";
+
+body {
+  font-family: 'haws_dev13regular', Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    -webkit-font-smoothing: antialiased;
+
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}

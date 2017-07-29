@@ -1,0 +1,53 @@
+h1,h2,h3,h4,h5,h6 {
+ font-family: 'haws_dev13regular', Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+          font-weight: bold;
+
+}
+
+h1 {
+  font-family: 'haws_dev13regular', Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 38px;
+    line-height: 37px;
+    letter-spacing: -1px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+      font-weight: bold;
+
+
+}
+
+h2 {
+  color: #575757;
+  font-size: 40px;
+  line-height: 52px;
+  margin-top: 0px;
+}
+
+h4 {
+  font-family: 'haws_dev13regular', Arial, Helvetica, sans-serif;
+    color: black;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+p {
+    color: #878787;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+}
+
+strong, span {
+  color: #000;
+  font-weight: bold;
+}
