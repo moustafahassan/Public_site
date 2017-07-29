@@ -45,7 +45,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 	__webpack_require__(1);
-	__webpack_require__(4);
+	__webpack_require__(5);
 	// require('./React/Main');
 
 /***/ }),
@@ -58,7 +58,7 @@
 	var content = __webpack_require__(2);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(3)(content, {});
+	var update = __webpack_require__(4)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -78,20 +78,76 @@
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(6)();
+	exports = module.exports = __webpack_require__(3)();
 	// imports
 	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Muli:200,300,400);", ""]);
 	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Rubik:900);", ""]);
 	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Cinzel|Cormorant+Garamond);", ""]);
 	
 	// module
-	exports.push([module.id, "article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {\n  display: block; }\n\naudio, canvas, video {\n  display: inline-block; }\n\naudio:not([controls]) {\n  display: none;\n  height: 0; }\n\n[hidden] {\n  display: none; }\n\nhtml {\n  font-family: sans-serif;\n  -ms-text-size-adjust: 100%;\n  -webkit-text-size-adjust: 100%; }\n\nbody {\n  margin: 0; }\n\na:focus {\n  outline: thin dotted; }\n\na:active, a:hover {\n  outline: 0; }\n\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0; }\n\nabbr[title] {\n  border-bottom: 1px dotted; }\n\nb, strong {\n  font-weight: bold; }\n\ndfn {\n  font-style: italic; }\n\nhr {\n  -moz-box-sizing: content-box;\n  box-sizing: content-box;\n  height: 0; }\n\nmark {\n  background: #ff0;\n  color: #000; }\n\ncode, kbd, pre, samp {\n  font-family: monospace,serif;\n  font-size: 1em; }\n\npre {\n  white-space: pre-wrap; }\n\nq {\n  quotes: \"\\201C\" \"\\201D\" \"\\2018\" \"\\2019\"; }\n\nsmall {\n  font-size: 80%; }\n\nsub, sup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline; }\n\nsup {\n  top: -0.5em; }\n\nsub {\n  bottom: -0.25em; }\n\nimg {\n  border: 0; }\n\nsvg:not(:root) {\n  overflow: hidden; }\n\nfigure {\n  margin: 0; }\n\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em; }\n\nlegend {\n  border: 0;\n  padding: 0; }\n\nbutton, input, select, textarea {\n  font-family: inherit;\n  font-size: 100%;\n  margin: 0; }\n\nbutton, input {\n  line-height: normal; }\n\nbutton, select {\n  text-transform: none; }\n\nbutton, html input[type=\"button\"], input[type=\"reset\"], input[type=\"submit\"] {\n  -webkit-appearance: button;\n  cursor: pointer; }\n\nbutton[disabled], html input[disabled] {\n  cursor: default; }\n\ninput[type=\"checkbox\"], input[type=\"radio\"] {\n  box-sizing: border-box;\n  padding: 0; }\n\ninput[type=\"search\"] {\n  -webkit-appearance: textfield;\n  -moz-box-sizing: content-box;\n  -webkit-box-sizing: content-box;\n  box-sizing: content-box; }\n\ninput[type=\"search\"]::-webkit-search-cancel-button, input[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none; }\n\nbutton::-moz-focus-inner, input::-moz-focus-inner {\n  border: 0;\n  padding: 0; }\n\ntextarea {\n  overflow: auto;\n  vertical-align: top; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\nh1, h2, h3, h4, h5, h6 {\n  font-family: 'haws_dev13regular', Arial, Helvetica, sans-serif;\n  color: black;\n  font-size: 18px;\n  line-height: 24px;\n  letter-spacing: 1px;\n  -webkit-font-smoothing: antialiased;\n  text-rendering: optimizeLegibility;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: bold; }\n\nh1 {\n  font-family: 'haws_dev13regular', Arial, Helvetica, sans-serif;\n  color: black;\n  font-size: 38px;\n  line-height: 37px;\n  letter-spacing: -1px;\n  -webkit-font-smoothing: antialiased;\n  text-rendering: optimizeLegibility;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: bold; }\n\nh2 {\n  color: #575757;\n  font-size: 40px;\n  line-height: 52px;\n  margin-top: 0px; }\n\nh4 {\n  font-family: 'haws_dev13regular', Arial, Helvetica, sans-serif;\n  color: black;\n  font-size: 26px;\n  font-weight: bold; }\n\np {\n  color: #878787;\n  font-size: 16px;\n  font-weight: 300;\n  line-height: 25px;\n  letter-spacing: 0.2px; }\n\nstrong, span {\n  color: #000;\n  font-weight: bold; }\n\n#logo {\n  color: black;\n  font-size: 30px;\n  font-family: 'Cinzel', serif;\n  letter-spacing: -.3px;\n  -webkit-font-smoothing: antialiased;\n  text-rendering: optimizeLegibility;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: normal; }\n\n/*---------------------------------------\n  Buttons\n-----------------------------------------*/\n.section-btn {\n  background: #fff;\n  border: none;\n  border-radius: 50px;\n  color: #000;\n  font-size: 14px;\n  font-weight: bold;\n  letter-spacing: 1.6px;\n  padding: 14px 20px 14px 20px;\n  margin-top: 32px;\n  margin-right: 20px;\n  -webkit-transition: all ease-in-out 0.4s;\n  transition: all ease-in-out 0.4s;\n  box-shadow: 1px 2px 5px #BDC3C7; }\n\n.section-btn:focus,\n.section-btn:hover {\n  background: #000000;\n  color: #ffffff; }\n\n/*---------------------------------------\n  Pre loader section\n-----------------------------------------*/\n.preloader {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  z-index: 99999;\n  display: flex;\n  flex-flow: row nowrap;\n  justify-content: center;\n  align-items: center;\n  background: none repeat scroll 0 0 #ffffff; }\n\n.spinner {\n  border: 1px solid transparent;\n  border-radius: 5px;\n  position: relative; }\n\n.spinner:before {\n  content: '';\n  box-sizing: border-box;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  width: 65px;\n  height: 65px;\n  margin-top: -10px;\n  margin-left: -10px;\n  border-radius: 50%;\n  border: 1px solid #000000;\n  border-top-color: #f9f9f9;\n  animation: spinner .9s linear infinite; }\n\n@-webkit- @keyframes spinner {\n  to {\n    transform: rotate(360deg); } }\n\n@keyframes spinner {\n  to {\n    transform: rotate(360deg); } }\n\n/*---------------------------------------\n  Navigation section\n-----------------------------------------*/\n.custom-navbar {\n  position: fixed;\n  z-index: 10;\n  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.2);\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: space-between;\n  top: 0;\n  width: 100%;\n  height: 70px;\n  margin-bottom: 0;\n  background-color: #ffffff; }\n\n.navbar-header {\n  margin-left: 9vw; }\n\n.navbar-brand {\n  font-family: 'Cinzel', serif;\n  color: black;\n  line-height: 24px;\n  letter-spacing: .2px;\n  -webkit-font-smoothing: antialiased;\n  text-rendering: optimizeLegibility;\n  -moz-osx-font-smoothing: grayscale;\n  color: #000;\n  font-size: 32px; }\n\n.custom-navbar .nav li a {\n  font-size: 14px;\n  font-weight: normal;\n  color: #656565;\n  letter-spacing: 1px;\n  -webkit-transition: all ease-in-out 0.4s;\n  transition: all ease-in-out 0.4s;\n  padding: 0;\n  margin: 15px; }\n\n.custom-navbar .navbar-nav li a:after {\n  content: \"\";\n  position: absolute;\n  display: block;\n  width: 0px;\n  height: 2px;\n  margin: auto;\n  transition: width .3s ease, background-color .3s ease; }\n\n.custom-navbar .navbar-nav li a:hover:after,\n.custom-navbar .nav li.active > a:after {\n  background: #000000;\n  color: #ffffff;\n  width: 100%; }\n\n.custom-navbar .nav li.active > a {\n  color: #454545; }\n\n.custom-navbar .navbar-toggle {\n  border: none;\n  padding-top: 12px; }\n\n.navbar-nav {\n  display: flex;\n  flex-direction: row;\n  list-style: none;\n  margin-right: 9vw; }\n\n/*---------------------------------------\n  Social icon\n-----------------------------------------*/\n.social-icon {\n  position: relative;\n  padding: 0;\n  margin: 0; }\n\n.social-icon li {\n  display: inline-block;\n  list-style: none; }\n\n.social-icon li a {\n  background: #292929;\n  border-radius: 100%;\n  color: #ffffff;\n  cursor: pointer;\n  font-size: 16px;\n  text-decoration: none;\n  transition: all 0.4s ease-in-out;\n  width: 30px;\n  height: 30px;\n  line-height: 30px;\n  text-align: center;\n  vertical-align: middle;\n  position: relative;\n  margin: 20px 6px 10px 6px; }\n\n.social-icon li a:hover {\n  background: #d7b065;\n  transform: scale(1.1); }\n\n/*\n===================================\n    MEDIA QUERIES\n===================================\n*/\n@media (max-width: 760px) {\n  .custom-navbar {\n    border-bottom: 0;\n    background: 0 0; }\n  .custom-navbar.top-nav-collapse {\n    background: #ffffff;\n    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.2);\n    padding: 10px 0; } }\n\n/*---------------------------------------\n    General\n-----------------------------------------*/\nhtml {\n  -webkit-font-smoothing: antialiased; }\n\na {\n  color: #575757;\n  -webkit-transition: 0.5s;\n  transition: 0.5s;\n  text-decoration: none !important; }\n\na:hover, a:active, a:focus {\n  color: #000000;\n  outline: none; }\n\n* {\n  -webkit-box-sizing: border-box;\n  box-sizing: border-box; }\n\n*:before,\n*:after {\n  -webkit-box-sizing: border-box;\n  box-sizing: border-box; }\n\n.section-title {\n  margin: 0;\n  padding-bottom: 32px; }\n\n#about, #work,\n#contact {\n  position: relative;\n  padding-top: 80px;\n  padding-bottom: 80px; }\n\n#about img, #team img {\n  border-radius: 5px; }\n\n#work {\n  border-top: 1px solid #f0f0f0;\n  border-bottom: 0px solid #f0f0f0;\n  box-shadow: 1px 2px 5px #E5E7E9; }\n\n/*---------------------------------------\n  Home section\n-----------------------------------------*/\n#home {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n  -ms-flex-align: center;\n  align-items: center;\n  height: 100vh;\n  position: relative;\n  padding-top: 62px; }\n\n#home img {\n  width: 120px;\n  height: 120px; }\n\n#weWork {\n  font-family: 'haws_dev13regular', Arial, Helvetica, sans-serif;\n  color: black;\n  font-size: 30px;\n  line-height: 32px;\n  letter-spacing: -.5px;\n  -webkit-font-smoothing: antialiased;\n  text-rendering: optimizeLegibility;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: bold; }\n\n#theStudio {\n  color: black;\n  font-size: 26px;\n  font-family: 'Cinzel', serif;\n  line-height: 30px;\n  letter-spacing: -.3px;\n  -webkit-font-smoothing: antialiased;\n  text-rendering: optimizeLegibility;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: normal; }\n\n/*---------------------------------------\n  About section\n-----------------------------------------*/\n#about {\n  margin-left: 9vw;\n  margin-right: 9vw;\n  max-width: 650px;\n  width: 100%; }\n\n.about__card {\n  padding-bottom: 20px;\n  margin-top: 100px;\n  padding-top: 5px;\n  padding-left: 16px;\n  padding-right: 16px;\n  box-shadow: 1px 2px 5px #CACFD2; }\n\n.about__buttons {\n  margin-top: 40px; }\n\n#about .col-md-4 a {\n  width: 100px;\n  height: 100px;\n  display: inline-block;\n  margin: 6px 6px 0px 0; }\n\n#about .about {\n  margin-top: 22px; }\n\n#about .about strong {\n  display: block;\n  padding-top: 4px; }\n\n/*---------------------------------------\n  Skill section\n-----------------------------------------*/\n#skill {\n  border-top: 1px solid #f0f0f0;\n  padding-top: 80px;\n  padding-bottom: 60px; }\n\n.skill-thumb strong,\n.skill-thumb span {\n  color: #575757;\n  font-size: 16px;\n  padding-bottom: 8px;\n  display: inline-block; }\n\n.skill-thumb .progress {\n  background: #ffffff;\n  border-radius: 5px;\n  box-shadow: none;\n  height: 4px; }\n\n.skill-thumb .progress-bar-primary {\n  background: #3d3d3f; }\n\n/*---------------------------------------\n  Work section\n-----------------------------------------*/\n#work .work-thumb {\n  margin-bottom: 15px;\n  padding: 0;\n  overflow: hidden;\n  position: relative;\n  top: 0;\n  -webkit-transition: all ease-in-out 0.4s;\n  transition: all ease-in-out 0.4s; }\n\n#work .work-thumb:hover {\n  background: #ffffff;\n  box-shadow: 0px 16px 22px 0px rgba(90, 91, 95, 0.3);\n  top: -5px; }\n\n/*---------------------------------------\n  Contact section\n-----------------------------------------*/\n#contact .form-control {\n  border-radius: 0px;\n  border-color: #f0f0f0;\n  box-shadow: none;\n  font-size: 16px;\n  margin-top: 12px;\n  margin-bottom: 12px;\n  -webkit-transition: all ease-in-out 0.4s;\n  transition: all ease-in-out 0.4s; }\n\n#contact .form-control:focus {\n  border-bottom: 2px solid #999999; }\n\n#contact input {\n  height: 55px;\n  border: none;\n  border-bottom: 1px solid #f0f0f0; }\n\n#contact button#submit {\n  background: #000000;\n  border: none;\n  border-radius: 50px;\n  color: #ffffff;\n  font-weight: 300;\n  height: 55px;\n  padding-bottom: 10px;\n  margin-top: 24px; }\n\n#contact button#submit:hover {\n  background: #d7b065;\n  color: #ffffff; }\n\n/*---------------------------------------\n  Mobile Responsive styles\n-----------------------------------------*/\n@media (min-width: 768px) and (max-width: 1024px) {\n  #home {\n    height: 50vh; } }\n\n@media (min-width: 667px) and (max-width: 767px) {\n  #home {\n    height: 140vh; } }\n\n@media (min-width: 568px) and (max-width: 665px) {\n  #home {\n    height: 190vh; } }\n\n@media (max-width: 980px) {\n  h1 {\n    font-size: 33px; }\n  #work .work-thumb {\n    margin-top: 30px; } }\n\n@media (max-width: 768px) {\n  h1 {\n    font-size: 30px;\n    line-height: normal; }\n  h2 {\n    font-size: 30px; }\n  .custom-navbar {\n    background-color: #ffffff;\n    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.2);\n    padding-top: 0px;\n    padding-bottom: 5px; }\n  .custom-navbar .nav {\n    padding-bottom: 10px; }\n  .custom-navbar .nav li a {\n    display: inline-block;\n    margin-bottom: 5px; } }\n\n@media (max-width: 580px) {\n  #about .about-thumb {\n    margin-top: 0px; }\n  .about-thumb .social-icon {\n    margin-bottom: 15px; } }\n\n@media (max-width: 357px) {\n  h1 {\n    font-size: 28px; }\n  #about .col-md-4 a {\n    width: 85px;\n    height: 85px; } }\n\nbody {\n  font-family: 'haws_dev13regular', Arial, Helvetica, sans-serif;\n  color: black;\n  font-size: 18px;\n  line-height: 24px;\n  letter-spacing: 1px;\n  -webkit-font-smoothing: antialiased; }\n\nhtml, body {\n  width: 100%;\n  height: 100%; }\n", ""]);
+	exports.push([module.id, "article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {\n  display: block; }\n\naudio, canvas, video {\n  display: inline-block; }\n\naudio:not([controls]) {\n  display: none;\n  height: 0; }\n\n[hidden] {\n  display: none; }\n\nhtml {\n  font-family: sans-serif;\n  -ms-text-size-adjust: 100%;\n  -webkit-text-size-adjust: 100%; }\n\nbody {\n  margin: 0; }\n\na:focus {\n  outline: thin dotted; }\n\na:active, a:hover {\n  outline: 0; }\n\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0; }\n\nabbr[title] {\n  border-bottom: 1px dotted; }\n\nb, strong {\n  font-weight: bold; }\n\ndfn {\n  font-style: italic; }\n\nhr {\n  -moz-box-sizing: content-box;\n  box-sizing: content-box;\n  height: 0; }\n\nmark {\n  background: #ff0;\n  color: #000; }\n\ncode, kbd, pre, samp {\n  font-family: monospace,serif;\n  font-size: 1em; }\n\npre {\n  white-space: pre-wrap; }\n\nq {\n  quotes: \"\\201C\" \"\\201D\" \"\\2018\" \"\\2019\"; }\n\nsmall {\n  font-size: 80%; }\n\nsub, sup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline; }\n\nsup {\n  top: -0.5em; }\n\nsub {\n  bottom: -0.25em; }\n\nimg {\n  border: 0; }\n\nsvg:not(:root) {\n  overflow: hidden; }\n\nfigure {\n  margin: 0; }\n\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em; }\n\nlegend {\n  border: 0;\n  padding: 0; }\n\nbutton, input, select, textarea {\n  font-family: inherit;\n  font-size: 100%;\n  margin: 0; }\n\nbutton, input {\n  line-height: normal; }\n\nbutton, select {\n  text-transform: none; }\n\nbutton, html input[type=\"button\"], input[type=\"reset\"], input[type=\"submit\"] {\n  -webkit-appearance: button;\n  cursor: pointer; }\n\nbutton[disabled], html input[disabled] {\n  cursor: default; }\n\ninput[type=\"checkbox\"], input[type=\"radio\"] {\n  box-sizing: border-box;\n  padding: 0; }\n\ninput[type=\"search\"] {\n  -webkit-appearance: textfield;\n  -moz-box-sizing: content-box;\n  -webkit-box-sizing: content-box;\n  box-sizing: content-box; }\n\ninput[type=\"search\"]::-webkit-search-cancel-button, input[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none; }\n\nbutton::-moz-focus-inner, input::-moz-focus-inner {\n  border: 0;\n  padding: 0; }\n\ntextarea {\n  overflow: auto;\n  vertical-align: top; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\nh1, h2, h3, h4, h5, h6 {\n  font-family: 'haws_dev13regular', Arial, Helvetica, sans-serif;\n  color: black;\n  font-size: 18px;\n  line-height: 24px;\n  letter-spacing: 1px;\n  -webkit-font-smoothing: antialiased;\n  text-rendering: optimizeLegibility;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: bold; }\n\nh1 {\n  font-family: 'haws_dev13regular', Arial, Helvetica, sans-serif;\n  color: black;\n  font-size: 38px;\n  line-height: 37px;\n  letter-spacing: -1px;\n  -webkit-font-smoothing: antialiased;\n  text-rendering: optimizeLegibility;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: bold; }\n\nh2 {\n  color: #575757;\n  font-size: 40px;\n  line-height: 52px;\n  margin-top: 0px; }\n\nh4 {\n  font-family: 'haws_dev13regular', Arial, Helvetica, sans-serif;\n  color: black;\n  font-size: 26px;\n  font-weight: bold; }\n\np {\n  color: #878787;\n  font-size: 16px;\n  font-weight: 300;\n  line-height: 25px;\n  letter-spacing: 0.2px; }\n\nstrong, span {\n  color: #000;\n  font-weight: bold; }\n\n#logo {\n  color: black;\n  font-size: 30px;\n  font-family: 'Cinzel', serif;\n  letter-spacing: -.3px;\n  -webkit-font-smoothing: antialiased;\n  text-rendering: optimizeLegibility;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: normal; }\n\n/*---------------------------------------\n  Buttons\n-----------------------------------------*/\n.section-btn {\n  background: #fff;\n  border: none;\n  border-radius: 50px;\n  color: #000;\n  font-size: 14px;\n  font-weight: bold;\n  letter-spacing: 1.6px;\n  padding: 14px 20px 14px 20px;\n  margin-top: 32px;\n  margin-right: 20px;\n  -webkit-transition: all ease-in-out 0.4s;\n  transition: all ease-in-out 0.4s;\n  box-shadow: 1px 2px 5px #BDC3C7; }\n\n.section-btn:focus,\n.section-btn:hover {\n  background: #000000;\n  color: #ffffff; }\n\n/*---------------------------------------\n  Pre loader section\n-----------------------------------------*/\n.preloader {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  z-index: 99999;\n  display: flex;\n  flex-flow: row nowrap;\n  justify-content: center;\n  align-items: center;\n  background: none repeat scroll 0 0 #ffffff; }\n\n.spinner {\n  border: 1px solid transparent;\n  border-radius: 5px;\n  position: relative; }\n\n.spinner:before {\n  content: '';\n  box-sizing: border-box;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  width: 65px;\n  height: 65px;\n  margin-top: -10px;\n  margin-left: -10px;\n  border-radius: 50%;\n  border: 1px solid #000000;\n  border-top-color: #f9f9f9;\n  animation: spinner .9s linear infinite; }\n\n@-webkit- @keyframes spinner {\n  to {\n    transform: rotate(360deg); } }\n\n@keyframes spinner {\n  to {\n    transform: rotate(360deg); } }\n\n/*---------------------------------------\n  Navigation section\n-----------------------------------------*/\n.custom-navbar {\n  position: fixed;\n  z-index: 10;\n  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.2);\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: space-between;\n  top: 0;\n  width: 100%;\n  height: 70px;\n  margin-bottom: 0;\n  background-color: #ffffff; }\n\n.navbar-header {\n  margin-left: 9vw; }\n\n.navbar-brand {\n  font-family: 'Cinzel', serif;\n  color: black;\n  line-height: 24px;\n  letter-spacing: .2px;\n  -webkit-font-smoothing: antialiased;\n  text-rendering: optimizeLegibility;\n  -moz-osx-font-smoothing: grayscale;\n  color: #000;\n  font-size: 32px; }\n\n.custom-navbar .nav li a {\n  font-size: 14px;\n  font-weight: normal;\n  color: #656565;\n  letter-spacing: 1px;\n  -webkit-transition: all ease-in-out 0.4s;\n  transition: all ease-in-out 0.4s;\n  padding: 0;\n  margin: 15px; }\n\n.custom-navbar .navbar-nav li a:after {\n  content: \"\";\n  position: absolute;\n  display: block;\n  width: 0px;\n  height: 2px;\n  margin: auto;\n  transition: width .3s ease, background-color .3s ease; }\n\n.custom-navbar .navbar-nav li a:hover:after,\n.custom-navbar .nav li.active > a:after {\n  background: #000000;\n  color: #ffffff;\n  width: 100%; }\n\n.custom-navbar .nav li.active > a {\n  color: #454545; }\n\n.custom-navbar .navbar-toggle {\n  border: none;\n  padding-top: 12px; }\n\n.navbar-nav {\n  display: flex;\n  flex-direction: row;\n  list-style: none;\n  margin-right: 9vw; }\n\n/*---------------------------------------\n  Social icon\n-----------------------------------------*/\n.social-icon {\n  position: relative;\n  padding: 0;\n  margin: 0; }\n\n.social-icon li {\n  display: inline-block;\n  list-style: none; }\n\n.social-icon li a {\n  background: #292929;\n  border-radius: 100%;\n  color: #ffffff;\n  cursor: pointer;\n  font-size: 16px;\n  text-decoration: none;\n  transition: all 0.4s ease-in-out;\n  width: 30px;\n  height: 30px;\n  line-height: 30px;\n  text-align: center;\n  vertical-align: middle;\n  position: relative;\n  margin: 20px 6px 10px 6px; }\n\n.social-icon li a:hover {\n  background: #d7b065;\n  transform: scale(1.1); }\n\n/*\n===================================\n    MEDIA QUERIES\n===================================\n*/\n@media (max-width: 760px) {\n  .custom-navbar {\n    border-bottom: 0;\n    background: 0 0; }\n  .custom-navbar.top-nav-collapse {\n    background: #ffffff;\n    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.2);\n    padding: 10px 0; } }\n\n/*---------------------------------------\n    General\n-----------------------------------------*/\nhtml {\n  -webkit-font-smoothing: antialiased; }\n\na {\n  color: #575757;\n  -webkit-transition: 0.5s;\n  transition: 0.5s;\n  text-decoration: none !important; }\n\na:hover, a:active, a:focus {\n  color: #000000;\n  outline: none; }\n\n* {\n  -webkit-box-sizing: border-box;\n  box-sizing: border-box; }\n\n*:before,\n*:after {\n  -webkit-box-sizing: border-box;\n  box-sizing: border-box; }\n\n.section-title {\n  margin: 0;\n  padding-bottom: 32px; }\n\n#about, #work,\n#contact {\n  position: relative;\n  padding-top: 80px;\n  padding-bottom: 80px; }\n\n#about img, #team img {\n  border-radius: 5px; }\n\n#work {\n  border-top: 1px solid #f0f0f0;\n  border-bottom: 0px solid #f0f0f0;\n  box-shadow: 1px 2px 5px #E5E7E9; }\n\n/*---------------------------------------\n  Home section\n-----------------------------------------*/\n#home {\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n  -webkit-align-items: center;\n  -ms-flex-align: center;\n  align-items: center;\n  height: 100vh;\n  position: relative;\n  padding-top: 62px; }\n\n#home img {\n  width: 120px;\n  height: 120px; }\n\n#weWork {\n  font-family: 'haws_dev13regular', Arial, Helvetica, sans-serif;\n  color: black;\n  font-size: 30px;\n  line-height: 32px;\n  letter-spacing: -.5px;\n  -webkit-font-smoothing: antialiased;\n  text-rendering: optimizeLegibility;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: bold; }\n\n#theStudio {\n  color: black;\n  font-size: 26px;\n  font-family: 'Cinzel', serif;\n  line-height: 30px;\n  letter-spacing: -.3px;\n  -webkit-font-smoothing: antialiased;\n  text-rendering: optimizeLegibility;\n  -moz-osx-font-smoothing: grayscale;\n  font-weight: normal; }\n\n/*---------------------------------------\n  About section\n-----------------------------------------*/\n#about {\n  margin-left: 9vw;\n  margin-right: 9vw;\n  max-width: 650px;\n  width: 100%; }\n\n.about__card {\n  padding-bottom: 20px;\n  margin-top: 100px;\n  padding-top: 5px;\n  padding-left: 16px;\n  padding-right: 16px;\n  box-shadow: 1px 2px 5px #CACFD2; }\n\n.about__buttons {\n  margin-top: 40px; }\n\n#about .col-md-4 a {\n  width: 100px;\n  height: 100px;\n  display: inline-block;\n  margin: 6px 6px 0px 0; }\n\n#about .about {\n  margin-top: 22px; }\n\n#about .about strong {\n  display: block;\n  padding-top: 4px; }\n\n/*---------------------------------------\n  Skill section\n-----------------------------------------*/\n#skill {\n  border-top: 1px solid #f0f0f0;\n  padding-top: 80px;\n  padding-bottom: 60px; }\n\n.skill-thumb strong,\n.skill-thumb span {\n  color: #575757;\n  font-size: 16px;\n  padding-bottom: 8px;\n  display: inline-block; }\n\n.skill-thumb .progress {\n  background: #ffffff;\n  border-radius: 5px;\n  box-shadow: none;\n  height: 4px; }\n\n.skill-thumb .progress-bar-primary {\n  background: #3d3d3f; }\n\n/*---------------------------------------\n  Work section\n-----------------------------------------*/\n#headgif {\n  width: inherit;\n  height: 270px; }\n\n#work {\n  margin-bottom: 15px;\n  padding: 0;\n  overflow: hidden;\n  position: relative;\n  top: 0;\n  -webkit-transition: all ease-in-out 0.4s;\n  transition: all ease-in-out 0.4s; }\n\n.portfolio {\n  display: flex;\n  position: relative;\n  flex-wrap: wrap;\n  justify-content: space-around;\n  clear: both;\n  margin: 0 auto;\n  padding: 1em 0 4em;\n  max-width: 1000px;\n  list-style: none; }\n  .portfolio__item {\n    min-width: 320px;\n    max-width: 480px;\n    width: 100%;\n    max-height: 360px;\n    margin: 10px 1%;\n    overflow: hidden; }\n    .portfolio__item__caption {\n      position: fixed;\n      position: absolute; }\n  .portfolio__item img {\n    width: inherit;\n    height: inherit; }\n\n#work .work-thumb:hover {\n  background: #ffffff;\n  box-shadow: 0px 16px 22px 0px rgba(90, 91, 95, 0.3);\n  top: -5px; }\n\n/*---------------------------------------\n  Contact section\n-----------------------------------------*/\n#contact {\n  border-radius: 0px;\n  border-color: #f0f0f0;\n  box-shadow: none;\n  font-size: 16px;\n  margin-left: 9vw;\n  margin-top: 12px;\n  margin-bottom: 12px;\n  -webkit-transition: all ease-in-out 0.4s;\n  transition: all ease-in-out 0.4s; }\n\n/*---------------------------------------\n  Currently section\n-----------------------------------------*/\n#currently {\n  margin-left: 9vw; }\n\n/*---------------------------------------\n  Contact section\n-----------------------------------------*/\n#press {\n  margin-left: 9vw; }\n\n/*---------------------------------------\n  Video Footer section\n-----------------------------------------*/\n#vidFoot {\n  margin-left: 9vw; }\n\n/*---------------------------------------\n  Mobile Responsive styles\n-----------------------------------------*/\n@media (min-width: 768px) and (max-width: 1024px) {\n  #home {\n    height: 50vh; } }\n\n@media (min-width: 667px) and (max-width: 767px) {\n  #home {\n    height: 140vh; } }\n\n@media (min-width: 568px) and (max-width: 665px) {\n  #home {\n    height: 190vh; } }\n\n@media (max-width: 980px) {\n  h1 {\n    font-size: 33px; }\n  #work .work-thumb {\n    margin-top: 30px; } }\n\n@media (max-width: 768px) {\n  h1 {\n    font-size: 30px;\n    line-height: normal; }\n  h2 {\n    font-size: 30px; }\n  .custom-navbar {\n    background-color: #ffffff;\n    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.2);\n    padding-top: 0px;\n    padding-bottom: 5px; }\n  .custom-navbar .nav {\n    padding-bottom: 10px; }\n  .custom-navbar .nav li a {\n    display: inline-block;\n    margin-bottom: 5px; } }\n\n@media (max-width: 580px) {\n  #about .about-thumb {\n    margin-top: 0px; }\n  .about-thumb .social-icon {\n    margin-bottom: 15px; } }\n\n@media (max-width: 357px) {\n  h1 {\n    font-size: 28px; }\n  #about .col-md-4 a {\n    width: 85px;\n    height: 85px; } }\n\nbody {\n  font-family: 'haws_dev13regular', Arial, Helvetica, sans-serif;\n  color: black;\n  font-size: 18px;\n  line-height: 24px;\n  letter-spacing: 1px;\n  -webkit-font-smoothing: antialiased; }\n\nhtml, body {\n  width: 100%;\n  height: 100%; }\n", ""]);
 	
 	// exports
 
 
 /***/ }),
 /* 3 */
+/***/ (function(module, exports) {
+
+	/*
+		MIT License http://www.opensource.org/licenses/mit-license.php
+		Author Tobias Koppers @sokra
+	*/
+	// css base code, injected by the css-loader
+	module.exports = function() {
+		var list = [];
+	
+		// return the list of modules as css string
+		list.toString = function toString() {
+			var result = [];
+			for(var i = 0; i < this.length; i++) {
+				var item = this[i];
+				if(item[2]) {
+					result.push("@media " + item[2] + "{" + item[1] + "}");
+				} else {
+					result.push(item[1]);
+				}
+			}
+			return result.join("");
+		};
+	
+		// import a list of modules into the list
+		list.i = function(modules, mediaQuery) {
+			if(typeof modules === "string")
+				modules = [[null, modules, ""]];
+			var alreadyImportedModules = {};
+			for(var i = 0; i < this.length; i++) {
+				var id = this[i][0];
+				if(typeof id === "number")
+					alreadyImportedModules[id] = true;
+			}
+			for(i = 0; i < modules.length; i++) {
+				var item = modules[i];
+				// skip already imported module
+				// this implementation is not 100% perfect for weird media query combinations
+				//  when a module is imported multiple times with different media queries.
+				//  I hope this will never occur (Hey this way we have smaller bundles)
+				if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
+					if(mediaQuery && !item[2]) {
+						item[2] = mediaQuery;
+					} else if(mediaQuery) {
+						item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
+					}
+					list.push(item);
+				}
+			}
+		};
+		return list;
+	};
+
+
+/***/ }),
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/*
@@ -343,7 +399,7 @@
 
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(jQuery) {(function ($) {
@@ -383,10 +439,10 @@
 	  // WOW Animation js
 	  new WOW({ mobile: false }).init();
 	})(jQuery);
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)))
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10642,62 +10698,6 @@
 	
 	return jQuery;
 	} );
-
-
-/***/ }),
-/* 6 */
-/***/ (function(module, exports) {
-
-	/*
-		MIT License http://www.opensource.org/licenses/mit-license.php
-		Author Tobias Koppers @sokra
-	*/
-	// css base code, injected by the css-loader
-	module.exports = function() {
-		var list = [];
-	
-		// return the list of modules as css string
-		list.toString = function toString() {
-			var result = [];
-			for(var i = 0; i < this.length; i++) {
-				var item = this[i];
-				if(item[2]) {
-					result.push("@media " + item[2] + "{" + item[1] + "}");
-				} else {
-					result.push(item[1]);
-				}
-			}
-			return result.join("");
-		};
-	
-		// import a list of modules into the list
-		list.i = function(modules, mediaQuery) {
-			if(typeof modules === "string")
-				modules = [[null, modules, ""]];
-			var alreadyImportedModules = {};
-			for(var i = 0; i < this.length; i++) {
-				var id = this[i][0];
-				if(typeof id === "number")
-					alreadyImportedModules[id] = true;
-			}
-			for(i = 0; i < modules.length; i++) {
-				var item = modules[i];
-				// skip already imported module
-				// this implementation is not 100% perfect for weird media query combinations
-				//  when a module is imported multiple times with different media queries.
-				//  I hope this will never occur (Hey this way we have smaller bundles)
-				if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
-					if(mediaQuery && !item[2]) {
-						item[2] = mediaQuery;
-					} else if(mediaQuery) {
-						item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
-					}
-					list.push(item);
-				}
-			}
-		};
-		return list;
-	};
 
 
 /***/ })
