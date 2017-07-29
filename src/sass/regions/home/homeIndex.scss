@@ -191,7 +191,12 @@ a:hover, a:active, a:focus {
   Work section
 -----------------------------------------*/
 
-#work .work-thumb {
+#headgif{
+  width: inherit;
+  height: 270px;
+}
+
+#work{
   margin-bottom: 15px;
   padding: 0;
   overflow: hidden;
@@ -199,7 +204,38 @@ a:hover, a:active, a:focus {
   top: 0;
   -webkit-transition: all ease-in-out 0.4s;
   transition: all ease-in-out 0.4s;
+}
 
+.portfolio{
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  clear: both;
+  margin: 0 auto;
+  padding: 1em 0 4em;
+  max-width: 1000px;
+  list-style: none;
+
+    &__item{
+      min-width: 320px;
+      max-width: 480px;
+      width: 100%;
+      max-height: 360px;
+      margin: 10px 1%;
+      overflow: hidden;
+
+        &__caption{
+          position: fixed;
+          position: absolute;
+        }
+
+    }
+
+    &__item img{
+      width: inherit;
+      height: inherit;
+    }
 
 
 }
@@ -210,52 +246,46 @@ a:hover, a:active, a:focus {
   top: -5px;
 }
 
-#work .work-thumb img {
-
-
-}
-
 
 
 /*---------------------------------------
   Contact section
 -----------------------------------------*/
 
-#contact .form-control {
+#contact {
   border-radius: 0px;
   border-color: #f0f0f0;
   box-shadow: none;
   font-size: 16px;
+  margin-left: 9vw;
   margin-top: 12px;
   margin-bottom: 12px;
   -webkit-transition: all ease-in-out 0.4s;
   transition: all ease-in-out 0.4s;
 }
 
-#contact .form-control:focus {
-  border-bottom: 2px solid #999999;
+/*---------------------------------------
+  Currently section
+-----------------------------------------*/
+
+#currently{
+  margin-left: 9vw;
 }
 
-#contact input {
-  height: 55px;
-  border: none;
-  border-bottom: 1px solid #f0f0f0;
+/*---------------------------------------
+  Contact section
+-----------------------------------------*/
+
+#press{
+  margin-left: 9vw;
 }
 
-#contact button#submit {
-  background: #000000;
-  border: none;
-  border-radius: 50px;
-  color: #ffffff;
-  font-weight: 300;
-  height: 55px;
-  padding-bottom: 10px;
-  margin-top: 24px;
-}
+/*---------------------------------------
+  Video Footer section
+-----------------------------------------*/
 
-#contact button#submit:hover {
-  background: #d7b065;
-  color: #ffffff;
+#vidFoot{
+  margin-left: 9vw;
 }
 
 /*---------------------------------------
